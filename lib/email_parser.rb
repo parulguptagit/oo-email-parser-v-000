@@ -9,8 +9,11 @@ class EmailParser
     @emails = emails
   end
   
-  def parse
+  def parse_comma
     email_array = @emails.split(/,/)
+  end
+  def parse
+    
     email_array.each do |email|
       email.strip!
     end
