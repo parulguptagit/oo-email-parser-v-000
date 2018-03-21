@@ -10,7 +10,7 @@ class EmailParser
   end
   
   def parse
-    email_array = @emails.split(/[(,| )]/)
+    email_array = @emails.split(/, /)
     email_array.each do |email|
       email.strip!
     end
