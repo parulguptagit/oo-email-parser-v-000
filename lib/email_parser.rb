@@ -12,6 +12,11 @@ class EmailParser
   def parse_comma
     email_array = @emails.split(/,/)
   end
+  
+  def parse_space
+    email_array = @emails.split(/ /)
+  end
+  
   def parse
     
     email_array.each do |email|
